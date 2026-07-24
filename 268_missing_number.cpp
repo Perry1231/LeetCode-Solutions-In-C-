@@ -1,18 +1,16 @@
-#include <iostream>
-#include <algorithm>
-#include <cctype>
-#include <cstdlib>
-
 class Solution {
 public:
     int missingNumber(vector<int>& nums) {
         int size = nums.size();
+        if (nums.empty()) return 0;
+        else {
+        std::sort(nums.begin(), nums.end());
+        
         for(int i =0; i < size; i++)
         {
-            auto it = std::find_if( nums.begin(), nums.end(), isdigit );
-
-            if ( it != nums.end() ) n = std::atoi( nums.c_str() + ( it - nums.begin() ) ) return it;
+           if (nums[i] != i) return i;
         }
-        return 0;
+     return size;
+        }
     }
 };
