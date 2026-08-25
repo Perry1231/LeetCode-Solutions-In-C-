@@ -11,8 +11,6 @@ class Solution {
 public:
     int guessNumber(int n) {
         
-        if(n==2) return 1;
-
     int left = 1;
     int right = n;
 
