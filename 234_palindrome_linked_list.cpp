@@ -21,10 +21,11 @@ public:
 
     while(left < right)
     {
-        if (vals[left] != vals[right]) return true;
+        if (vals[left] != vals[right]) return false;
         left++;
         right--;
     }
     return true;
+    
     }
 };
