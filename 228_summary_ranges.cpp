@@ -6,7 +6,7 @@ public:
 
         for(int i=0; i<n; ++i)
         {
-            int left = nums[i];
+            int start = nums[i];
             while (i + 1 < n && nums[i + 1] == nums[i] + 1) {
                 i++;
             }
