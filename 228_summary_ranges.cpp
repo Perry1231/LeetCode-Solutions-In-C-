@@ -10,7 +10,7 @@ public:
             while (i + 1 < n && nums[i + 1] == nums[i] + 1) {
                 i++;
             }
-            int end =num[i];
+            int end =nums[i];
 
             if (start == end) {
                 result.push_back(to_string(start));
