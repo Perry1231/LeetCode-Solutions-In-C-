@@ -18,6 +18,6 @@ public:
             }
         }
         
-        return res;s;
+        return res;
     }
 };
