@@ -4,8 +4,6 @@ public:
         std::sort(nums.begin(), nums.end());
         int n = nums.size();
         int sum;
-        int fis =0;
-        int thi;
 
         int left=1;                 //For second number
         int right=nums.size()-1;    //For third number
