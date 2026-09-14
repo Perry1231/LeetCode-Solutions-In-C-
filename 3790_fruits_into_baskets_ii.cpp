@@ -2,7 +2,7 @@ class Solution {
 public:
     int numOfUnplacedFruits(std::vector<int>& fruits, std::vector<int>& baskets) {
         int n = fruits.size();
-    
+        int unplaced = n; 
         std::vector<bool> used(n, false);
 
         for (int i = 0; i < n; ++i) {
