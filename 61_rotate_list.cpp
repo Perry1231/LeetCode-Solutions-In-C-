@@ -11,6 +11,8 @@
 class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {
+        if (!head) return head;
+        
         vector<int> values;                     //All in
         ListNode* curr = head;
         while (curr != nullptr) {
@@ -19,9 +21,10 @@ public:
         }
 
         int n = values.size();
+        if (k == 0) return head;
         k = k % n;
-        std::rotate(values.rbegin(), values.rbegin() + k, values.rend());
-    
+        std::rotate(values.begin(), values.end() - k, values.end());   
+
         curr = head;                               //Back to nodes
         for (int val : values) {
             curr->val = val;
