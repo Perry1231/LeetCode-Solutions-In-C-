@@ -1,21 +1,12 @@
 class Solution {
 public:
     bool isPalindrome(int x) {
-       
-        if (x < 0 || (x % 10 == 0 && x != 0)) {
-            return false;
-        }
+        if(x<0) return false;
 
-        int original = x;
-        long long reversed = 0; 
+        std::string s = std::to_string(x);              //Reverse num
+        std::reverse(s.begin(), s.end()); 
+        long long y = std::stoll(s);   
 
-
-        while (x > 0) {
-            int lastDigit = x % 10;                
-            reversed = reversed * 10 + lastDigit;  
-            x = x / 10;                            
-        }
-
-        return original == reversed;
+    return x==y;
     }
 };
