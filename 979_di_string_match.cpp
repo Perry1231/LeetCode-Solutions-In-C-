@@ -3,23 +3,23 @@ public:
     vector<int> diStringMatch(string s) {
         int n = s.length();
         vector <int> res;
-        int max= n;
-        int min=0;
+        int maxi= n;
+        int mini = 0;
         for(int i=0; i<n; i++)
         {
             if(s[i] == 'I')
             {
-                res.push_back(min);
-                min++;
+                res.push_back(mini);
+                mini++;
             }
             else 
             {
-                res.push_back(max);
-                max--;
+                res.push_back(maxi);
+                maxi--;
             }
         }
 
-        res.push_back(max);
+        res.push_back(maxi);
         return res;
     }
 };
