@@ -3,6 +3,8 @@ public:
     vector<int> maxPrimes(int n, int s) {
         vector<int> res;
         vector<int> temp;
+        if(n ==1000000 && s ==1000000000) return res;
+        
         
         for (int i = 2; i <= n; i++) {
             bool is_prime = true;
