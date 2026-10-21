@@ -12,6 +12,8 @@ public:
             right--;
         }
 
-       return res; 
+        auto max_it = std::max_element(res.begin(), res.end());
+int maxi = *max_it;
+return maxi; 
     }
 };
