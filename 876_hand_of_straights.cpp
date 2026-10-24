@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool isNStraightHand(vector<int>& hand, int groupSize) {
-        // 1. Перевірка на кратність
         if (hand.size() % groupSize != 0) return false;
 
         std::sort(hand.begin(), hand.end());
